@@ -7,8 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularModule18';
-  rdata:any;
-  receiveData(data:any){
-    this.rdata=data;
-  }
+ 
 }
