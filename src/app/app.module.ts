@@ -4,11 +4,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { CommonModule } from '@angular/common';
+import { DataBindingComponent } from './component/data-binding/data-binding.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    DataBindingComponent,
    
   ],
   imports: [
