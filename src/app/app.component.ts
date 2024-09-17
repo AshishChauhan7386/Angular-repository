@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularModule18';
- 
+ message:string="Ashish Chauhan"
 }
