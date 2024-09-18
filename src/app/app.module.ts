@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 
 import { CommonModule } from '@angular/common';
 import { DataBindingComponent } from './component/data-binding/data-binding.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { DataBindingComponent } from './component/data-binding/data-binding.comp
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

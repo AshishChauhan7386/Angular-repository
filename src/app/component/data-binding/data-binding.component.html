@@ -6,3 +6,11 @@
   <img [src]="imgUrl" alt="AngularIMG" width="20%" height="20%"><br>
    <!-- Property Binding view To Model Data Transfer-->
    <button (click)="onClick(message)">Click me</button>
+
+   <br>
+   <p>Two Way Data Binding</p>
+   <!-- ngModel Model To View - view to model Data Transfer-->
+    <input type="text" placeholder="Enter Name" [(ngModel)]="name"><br>
+    <h1>{{name}}</h1>
+
+    

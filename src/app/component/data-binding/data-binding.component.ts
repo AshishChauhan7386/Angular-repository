@@ -11,4 +11,5 @@ imgUrl:string="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM
 onClick(data:any){
 alert(data)
 }
+name:string="";
 }
