@@ -21,4 +21,5 @@ constructor(){
 onInputChange(event:any){
 this.msg=event.target.value
 }
+
 }
