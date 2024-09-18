@@ -13,4 +13,11 @@
     <input type="text" placeholder="Enter Name" [(ngModel)]="name"><br>
     <h1>{{name}}</h1>
 
-    
+<br>
+<input type="text" placeholder="Enter Full Name" [formControl]="fullName">
+<h1>{{fullName.value}}</h1>
+
+<input type="text"  placeholder="Enter Message" (input)="onInputChange($event)">
+
+<br>
+<h1>{{msg}}</h1>

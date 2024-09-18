@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-data-binding',
@@ -12,4 +13,12 @@ onClick(data:any){
 alert(data)
 }
 name:string="";
+fullName:any;
+msg:any;
+constructor(){
+  this.fullName = new FormControl('');  
+}
+onInputChange(event:any){
+this.msg=event.target.value
+}
 }
