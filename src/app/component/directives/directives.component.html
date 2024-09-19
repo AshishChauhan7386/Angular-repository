@@ -1,1 +1,38 @@
-<h1>Directives</h1>
+<!-- Dom Structure/behavior Modify -->
+<h1>Directives</h1> 
+<p>Component Directives</p>
+<p>Structural directives</p>
+<div *ngIf="isVisible">This element is visible</div>
+<div *ngFor="let data Of Data">
+    <p>{{data.name}} -- {{data.age}}</p>
+</div>
+<div>
+    <select [(ngModel)]="selectedOption">
+        <option value="" disabled selected hidden>Pick One</option>
+      <option value="A">Option A</option>
+      <option value="B">Option B</option>
+      <option value="C">Option C</option>
+    </select>
+
+    <div [ngSwitch]="selectedOption">
+        <p *ngSwitchCase="''">Please Select Option</p>
+      <p *ngSwitchCase="'A'">You selected Option A</p>
+      <p *ngSwitchCase="'B'">You selected Option B</p>
+      <p *ngSwitchCase="'C'">You selected Option C</p>
+      <p *ngSwitchDefault>Select a valid option</p>
+    </div>
+  </div>
+  <p>Attribute Directives</p>
+  <div [ngStyle]="{'color': isActive ? 'green' : 'red'}">
+    This div background color changes based on isActive
+  </div><br>
+  <div [ngClass]="{'active': isActive, 'inactive': !isActive}">
+    This div's style changes based on the isActive condition.
+  </div>
+<br>
+  <button (click)="toggleActive()">Toggle Active State</button>
+  <p appDirective>
+    Hover over this text to see the background color change.
+  </p>
+  <h1 appDirective>This Is  A Angular Application</h1>
+  
