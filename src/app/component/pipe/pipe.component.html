@@ -13,3 +13,7 @@
  <h1>Custom Pipe</h1>
 
  {{5 | exponentialStrength:5}}
+ <br>
+<div *ngFor="let data of Data | sort:'age' ">
+    {{data.name}}--{{data.age }}
+</div>
