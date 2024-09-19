@@ -1,3 +1,15 @@
 <!-- Transform data in templates -->
 <h1>Pipe</h1>
 <p>Built-in Pipes</p>
+
+
+ {{ today | date:'fullDate' }}
+ <br>{{ price | currency:'INR' }}
+ <br>
+ {{ amount | number:'1.2-2' }}
+ <br> {{ percentage / 100 | percent}}
+
+
+ <h1>Custom Pipe</h1>
+
+ {{5 | exponentialStrength:5}}

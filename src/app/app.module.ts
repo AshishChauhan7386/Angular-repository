@@ -9,6 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectivesComponent } from './component/directives/directives.component';
 import { DirectiveDirective } from './Directive/directive.directive';
 import { PipeComponent } from './component/pipe/pipe.component';
+import { ExponentialStrengthPipe } from './Pipes/exponential-strength.pipe';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { PipeComponent } from './component/pipe/pipe.component';
     DirectivesComponent,
     DirectiveDirective,
     PipeComponent,
+    ExponentialStrengthPipe,
    
   ],
   imports: [

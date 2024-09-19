@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './pipe.component.css'
 })
 export class PipeComponent {
-
+today:any=new Date();
+price:number=2000;
+amount:number=12;
+percentage:number=72
 }
