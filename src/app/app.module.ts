@@ -8,6 +8,7 @@ import { DataBindingComponent } from './component/data-binding/data-binding.comp
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectivesComponent } from './component/directives/directives.component';
 import { DirectiveDirective } from './Directive/directive.directive';
+import { PipeComponent } from './component/pipe/pipe.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { DirectiveDirective } from './Directive/directive.directive';
     DataBindingComponent,
     DirectivesComponent,
     DirectiveDirective,
+    PipeComponent,
    
   ],
   imports: [
