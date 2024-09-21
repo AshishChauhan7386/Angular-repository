@@ -10,7 +10,11 @@ import { DirectivesComponent } from './component/directives/directives.component
 import { DirectiveDirective } from './Directive/directive.directive';
 import { PipeComponent } from './component/pipe/pipe.component';
 import { ExponentialStrengthPipe } from './Pipes/exponential-strength.pipe';
-import { SortPipe } from './pipes/sort.pipe';
+
+import { ServiceAndDependencyInjectionComponent } from './component/service-and-dependency-injection/service-and-dependency-injection.component';
+import { SortPipe } from './Pipes/sort.pipe';
+
+
 
 
 @NgModule({
@@ -22,6 +26,7 @@ import { SortPipe } from './pipes/sort.pipe';
     PipeComponent,
     ExponentialStrengthPipe,
     SortPipe,
+    ServiceAndDependencyInjectionComponent,
    
   ],
   imports: [
