@@ -21,6 +21,7 @@ import { AboutComponent } from './component/about/about.component';
 import { ServiceComponent } from './component/service/service.component';
 import { GalleryComponent } from './component/gallery/gallery.component';
 import { TemplateDrivenformComponent } from './component/template-drivenform/template-drivenform.component';
+import { ReactiveformComponent } from './component/reactiveform/reactiveform.component';
 
 
 
@@ -42,6 +43,7 @@ import { TemplateDrivenformComponent } from './component/template-drivenform/tem
          ServiceComponent,
          GalleryComponent,
          TemplateDrivenformComponent,
+         ReactiveformComponent,
    
   ],
   imports: [
