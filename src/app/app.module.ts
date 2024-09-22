@@ -15,6 +15,12 @@ import { ServiceAndDependencyInjectionComponent } from './component/service-and-
 import { SortPipe } from './Pipes/sort.pipe';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 
+import { HeaderComponent } from './component/header/header.component';
+import { HomeComponent } from './component/home/home.component';
+import { AboutComponent } from './component/about/about.component';
+import { ServiceComponent } from './component/service/service.component';
+import { GalleryComponent } from './component/gallery/gallery.component';
+
 
 
 
@@ -28,6 +34,12 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
     ExponentialStrengthPipe,
     SortPipe,
     ServiceAndDependencyInjectionComponent,
+   
+    HeaderComponent,
+         HomeComponent,
+         AboutComponent,
+         ServiceComponent,
+         GalleryComponent,
    
   ],
   imports: [
