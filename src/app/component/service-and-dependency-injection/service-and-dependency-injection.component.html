@@ -5,5 +5,13 @@
 <p>{{msg}}</p>
 <p>{{custommsg}}</p>
 <br>
-<input type="text" [(ngModel)]="formDataValue" >
-<button (click)="saveData()">Print</button>
+<input type="text" placeholder="Enter Message" [(ngModel)]="formDataValue" >
+<button (click)="saveData()">Print</button><br>
+<div *ngFor="let data of ndata">
+    {{data.name}}--{{data.address}}
+</div>
+<h5>Form</h5>
+<input type="text" placeholder="Enter Name" [(ngModel)]="name"><br><br>
+<input type="text" placeholder="Enter Address" [(ngModel)]="address"><br><br>
+<button (click)="submit()">Submit Data</button><br><br>
+

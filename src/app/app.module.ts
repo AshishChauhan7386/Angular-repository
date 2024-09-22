@@ -13,6 +13,7 @@ import { ExponentialStrengthPipe } from './Pipes/exponential-strength.pipe';
 
 import { ServiceAndDependencyInjectionComponent } from './component/service-and-dependency-injection/service-and-dependency-injection.component';
 import { SortPipe } from './Pipes/sort.pipe';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 
 
 
@@ -34,10 +35,12 @@ import { SortPipe } from './Pipes/sort.pipe';
     AppRoutingModule,
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideHttpClient(withFetch())
   ],
   bootstrap: [AppComponent]
 })

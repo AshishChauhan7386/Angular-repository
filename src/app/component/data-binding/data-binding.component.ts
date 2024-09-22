@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { FormdataService } from '../../service/formdata.service';
 
 @Component({
   selector: 'app-data-binding',
@@ -15,11 +16,17 @@ alert(data)
 name:string="";
 fullName:any;
 msg:any;
-constructor(){
+ndata:any;
+constructor(private formdata:FormdataService){
   this.fullName = new FormControl('');  
+  this.getdata()
 }
 onInputChange(event:any){
 this.msg=event.target.value
 }
-
+getdata(){
+  this.formdata.data$.subscribe((data)=>{
+   this.ndata=data
+  })
+ }
 }

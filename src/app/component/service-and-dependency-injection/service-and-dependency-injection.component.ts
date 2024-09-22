@@ -18,24 +18,43 @@ export class ServiceAndDependencyInjectionComponent {
   msg: string;
   custommsg: string;
   formDataValue: string = '';
+  name: string = '';
+  address: string = '';
+  ndata: any[] = [];
+
   constructor(
     private dataservice: DataService,
     private componetlevelservice: ComponentLevelServcieService,
     private fakeservice: fakeData,
-    private formdata:FormdataService
+    private formdata: FormdataService
   ) {
     this.data = this.dataservice.getData();
     this.msg = this.componetlevelservice.msg();
     this.custommsg = this.fakeservice.getdata();
-    this.formdata.formData$.subscribe((data:any)=>{
-      this.formDataValue=data;
-          })
-  
+
+    this.formdata.formData$.subscribe((data: any) => {
+      this.formDataValue = data;
+    });
+
+    this.formdata.data$.subscribe((data: any[]) => {
+      this.ndata = data;
+    });
+
+    this.getData();
   }
-  saveData(){
-    
-this.formdata.updateFormData(this.formDataValue);
-console.log(this.formDataValue);
+
+  saveData() {
+    this.formdata.updateFormData(this.formDataValue);
+    console.log(this.formDataValue);
   }
-  
+
+  submit() {
+    this.formdata.postData(this.name, this.address).subscribe((res) => {
+      console.log('New data added:', res);
+    });
+  }
+
+  getData() {
+    this.formdata.fetchData();
+  }
 }

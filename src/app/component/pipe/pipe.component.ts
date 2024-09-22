@@ -33,6 +33,7 @@ export class PipeComponent implements OnInit{
       age: 26,
     },
   ];
+  ndata:any;
   private subscription: Subscription | null=null;
   constructor(private formdata:FormdataService){
 
@@ -43,5 +44,11 @@ export class PipeComponent implements OnInit{
 this.msg=data      
 
     })
+    this.getdata()
+  }
+  getdata(){
+   this.formdata.data$.subscribe((data)=>{
+    this.ndata=data
+   })
   }
 }

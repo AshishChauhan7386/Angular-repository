@@ -23,3 +23,7 @@
 <h1>{{msg}}</h1>
 
 <input type="text" placeholder="Enter Name">
+<br><br>
+<div *ngFor="let data of ndata">
+    {{data.name}}--{{data.address}}
+</div>
