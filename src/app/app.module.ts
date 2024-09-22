@@ -20,6 +20,7 @@ import { HomeComponent } from './component/home/home.component';
 import { AboutComponent } from './component/about/about.component';
 import { ServiceComponent } from './component/service/service.component';
 import { GalleryComponent } from './component/gallery/gallery.component';
+import { TemplateDrivenformComponent } from './component/template-drivenform/template-drivenform.component';
 
 
 
@@ -40,6 +41,7 @@ import { GalleryComponent } from './component/gallery/gallery.component';
          AboutComponent,
          ServiceComponent,
          GalleryComponent,
+         TemplateDrivenformComponent,
    
   ],
   imports: [
